@@ -1,23 +1,13 @@
 body {
-    background-color: rgb(151, 168, 184);
-}
-
-.btn {
-    cursor: pointer;
+    background-color:gray;
 }
 
 h1 {
-    color: #34495e;
-    transition: color 0.5s ease-in-out;
+    color: darkblue;
 }
-
-.clicked {
-    color: #7f8c8d;
-}
-
 
 .form,
-.greetings {
+.greeting {
     display: none;
 }
 
@@ -25,3 +15,21 @@ h1 {
     display: block;
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    do {
+        opacity: 1;
+    }
+}
+
+.bgImage{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: fadeIn 0.3s linear;
+}
